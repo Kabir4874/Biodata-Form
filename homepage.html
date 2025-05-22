@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prothom Alo - Homepage</title>
+
+    <link rel="icon" href="favicon.svg" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #00457c;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .left-column,
+      .right-column {
+        flex: 1;
+        margin: 10px;
+      }
+
+      .main-news,
+      .sidebar-news {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .main-news h2,
+      .sidebar-news h2 {
+        font-size: 1.8em;
+        color: #333;
+      }
+
+      .main-news ul,
+      .sidebar-news ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .main-news li,
+      .sidebar-news li {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      .main-news li a,
+      .sidebar-news li a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .main-news li a:hover,
+      .sidebar-news li a:hover {
+        color: #00457c;
+      }
+
+      .main-news img,
+      .sidebar-news img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Prothom Alo</h1>
+    </header>
+
+    <div class="container">
+      <div class="left-column">
+        <div class="main-news">
+          <h2>Top News</h2>
+          <ul>
+            <li>
+              <img
+                src="https://media.prothomalo.com/prothomalo-bangla%2F2025-05-14%2F7gnvrq2d%2FISPR.jpg?rect=0%2C0%2C639%2C426&w=622&auto=format%2Ccompress&fmt=avif"
+                alt="Headline 1"
+              />
+              <a href="#">Headline 1 - Latest news headline</a>
+            </li>
+            <li>
+              <img
+                src="https://media.prothomalo.com/prothomalo-bangla%2F2025-05-14%2F7gnvrq2d%2FISPR.jpg?rect=0%2C0%2C639%2C426&w=622&auto=format%2Ccompress&fmt=avif"
+                alt="Headline 2"
+              />
+              <a href="#">Headline 2 - Latest news headline</a>
+            </li>
+            <li>
+              <img
+                src="https://media.prothomalo.com/prothomalo-bangla%2F2025-05-14%2F7gnvrq2d%2FISPR.jpg?rect=0%2C0%2C639%2C426&w=622&auto=format%2Ccompress&fmt=avif"
+                alt="Headline 3"
+              />
+              <a href="#">Headline 3 - Latest news headline</a>
+            </li>
+            <li>
+              <img
+                src="https://media.prothomalo.com/prothomalo-bangla%2F2025-05-14%2F7gnvrq2d%2FISPR.jpg?rect=0%2C0%2C639%2C426&w=622&auto=format%2Ccompress&fmt=avif"
+                alt="Headline 4"
+              />
+              <a href="#">Headline 4 - Latest news headline</a>
+            </li>
+            <li>
+              <img
+                src="https://media.prothomalo.com/prothomalo-bangla%2F2025-05-14%2F7gnvrq2d%2FISPR.jpg?rect=0%2C0%2C639%2C426&w=622&auto=format%2Ccompress&fmt=avif"
+                alt="Headline 5"
+              />
+              <a href="#">Headline 5 - Latest news headline</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-news">
+          <h2>Trending Topics</h2>
+          <ul>
+            <li>
+              <img
+                src="https://media.prothomalo.com/prothomalo-bangla%2F2025-05-14%2F7gnvrq2d%2FISPR.jpg?rect=0%2C0%2C639%2C426&w=622&auto=format%2Ccompress&fmt=avif"
+                alt="Trending Topic 1"
+              />
+              <a href="#">Trending Topic 1</a>
+            </li>
+            <li>
+              <img
+                src="https://media.prothomalo.com/prothomalo-bangla%2F2025-05-14%2F7gnvrq2d%2FISPR.jpg?rect=0%2C0%2C639%2C426&w=622&auto=format%2Ccompress&fmt=avif"
+                alt="Trending Topic 2"
+              />
+              <a href="#">Trending Topic 2</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="sidebar-news">
+          <h2>News</h2>
+          <ul>
+            <li>
+              <img
+                src="https://media.prothomalo.com/prothomalo-bangla%2F2024-09-05%2F1gt55nn2%2Fispr.png?rect=0%2C0%2C926%2C617&w=622&auto=format%2Ccompress&fmt=avif"
+                alt="Sidebar News 1"
+              />
+              <a href="#">Sidebar News 1</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Prothom Alo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
