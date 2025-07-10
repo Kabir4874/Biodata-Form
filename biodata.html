@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marriage Biodata Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-header">
+        <h1>Marriage Biodata</h1>
+        <p>Please provide complete information for marriage purposes</p>
+      </div>
+
+      <form>
+        <div class="photo-upload">
+          <img
+            src="https://via.placeholder.com/180"
+            alt="Profile Photo"
+            class="photo-preview"
+          />
+          <input type="file" id="profilePhoto" accept="image/*" />
+          <label for="profilePhoto">Upload Profile Photo</label>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="fullName" class="required-label">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              required
+              placeholder="As per official documents"
+            />
+          </div>
+          <div class="col">
+            <label for="nickname">Nickname (What you like to be called)</label>
+            <input
+              type="text"
+              id="nickname"
+              name="nickname"
+              placeholder="Preferred name"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="dateOfBirth" class="required-label"
+              >Date of Birth</label
+            >
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+          </div>
+          <div class="col">
+            <label for="age">Age</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              placeholder="Your current age"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="height">Height</label>
+            <input type="text" id="height" name="height" placeholder="e.g.,
+            5'8\" or 172 cm">
+          </div>
+          <div class="col">
+            <label for="weight">Weight</label>
+            <input
+              type="text"
+              id="weight"
+              name="weight"
+              placeholder="e.g., 65 kg"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input
+                type="radio"
+                id="gender-male"
+                name="gender"
+                value="male"
+                checked
+              />
+              <label for="gender-male">Male</label>
+            </div>
+            <div class="radio-option">
+              <input
+                type="radio"
+                id="gender-female"
+                name="gender"
+                value="female"
+              />
+              <label for="gender-female">Female</label>
+            </div>
+            <div class="radio-option">
+              <input
+                type="radio"
+                id="gender-other"
+                name="gender"
+                value="other"
+              />
+              <label for="gender-other">Other</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="religion" class="required-label">Religion</label>
+            <select id="religion" name="religion" required>
+              <option value="">Select Religion</option>
+              <option value="hindu">Hindu</option>
+              <option value="muslim">Muslim</option>
+              <option value="christian">Christian</option>
+              <option value="sikh">Sikh</option>
+              <option value="jain">Jain</option>
+              <option value="buddhist">Buddhist</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="caste">Caste/Community</label>
+            <input
+              type="text"
+              id="caste"
+              name="caste"
+              placeholder="Your caste or community"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="motherTongue">Mother Tongue</label>
+          <input
+            type="text"
+            id="motherTongue"
+            name="motherTongue"
+            placeholder="Your native language"
+          />
+        </div>
+
+        <h3 class="section-title">Contact Information</h3>
+
+        <div class="row">
+          <div class="col">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="kabir@example.com"
+            />
+          </div>
+          <div class="col">
+            <label for="phone" class="required-label">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="+8801745648465"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Current Address</label>
+          <textarea
+            id="address"
+            name="address"
+            rows="3"
+            placeholder="Complete address with city and pin code"
+          ></textarea>
+        </div>
+
+        <h3 class="section-title">Education & Profession</h3>
+
+        <div class="row">
+          <div class="col">
+            <label for="education">Highest Education</label>
+            <select id="education" name="education">
+              <option value="">Select Highest Education</option>
+              <option value="high-school">High School</option>
+              <option value="diploma">Diploma</option>
+              <option value="graduate">Graduate (Bachelor's)</option>
+              <option value="post-graduate">Post Graduate (Master's)</option>
+              <option value="doctorate">Doctorate (PhD)</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="degree">Degree/Field of Study</label>
+            <input
+              type="text"
+              id="degree"
+              name="degree"
+              placeholder="e.g., B.Tech Computer Science"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="occupation">Occupation</label>
+            <input
+              type="text"
+              id="occupation"
+              name="occupation"
+              placeholder="Your current profession"
+            />
+          </div>
+          <div class="col">
+            <label for="income">Annual Income (approx.)</label>
+            <input
+              type="text"
+              id="income"
+              name="income"
+              placeholder="In INR or currency"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="organization">Organization/Company Name</label>
+          <input
+            type="text"
+            id="organization"
+            name="organization"
+            placeholder="Where you work"
+          />
+        </div>
+
+        <h3 class="section-title">Family Information</h3>
+
+        <div class="family-details">
+          <div class="row">
+            <div class="col">
+              <label for="fatherName">Father's Name</label>
+              <input
+                type="text"
+                id="fatherName"
+                name="fatherName"
+                placeholder="Father's full name"
+              />
+            </div>
+            <div class="col">
+              <label for="fatherOccupation">Father's Occupation</label>
+              <input
+                type="text"
+                id="fatherOccupation"
+                name="fatherOccupation"
+                placeholder="Father's profession"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="motherName">Mother's Name</label>
+              <input
+                type="text"
+                id="motherName"
+                name="motherName"
+                placeholder="Mother's full name"
+              />
+            </div>
+            <div class="col">
+              <label for="motherOccupation">Mother's Occupation</label>
+              <input
+                type="text"
+                id="motherOccupation"
+                name="motherOccupation"
+                placeholder="Mother's profession"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="siblings">Siblings (Brothers/Sisters)</label>
+            <input
+              type="text"
+              id="siblings"
+              name="siblings"
+              placeholder="Number and details of siblings"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="familyType">Family Type</label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="family-joint"
+                  name="familyType"
+                  value="joint"
+                />
+                <label for="family-joint">Joint Family</label>
+              </div>
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="family-nuclear"
+                  name="familyType"
+                  value="nuclear"
+                />
+                <label for="family-nuclear">Nuclear Family</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="familyValues">Family Values</label>
+            <div class="checkbox-group">
+              <div class="checkbox-option">
+                <input
+                  type="checkbox"
+                  id="value-traditional"
+                  name="familyValues"
+                  value="traditional"
+                />
+                <label for="value-traditional">Traditional</label>
+              </div>
+              <div class="checkbox-option">
+                <input
+                  type="checkbox"
+                  id="value-moderate"
+                  name="familyValues"
+                  value="moderate"
+                />
+                <label for="value-moderate">Moderate</label>
+              </div>
+              <div class="checkbox-option">
+                <input
+                  type="checkbox"
+                  id="value-liberal"
+                  name="familyValues"
+                  value="liberal"
+                />
+                <label for="value-liberal">Liberal</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-title">Partner Preferences (Optional)</h3>
+
+        <div class="row">
+          <div class="col">
+            <label for="prefAge">Preferred Age Range</label>
+            <input
+              type="text"
+              id="prefAge"
+              name="prefAge"
+              placeholder="e.g., 25-30 years"
+            />
+          </div>
+          <div class="col">
+            <label for="prefHeight">Preferred Height</label>
+            <input type="text" id="prefHeight" name="prefHeight"
+            placeholder="e.g., 5'4\" to 5'8\"">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="prefReligion">Preferred Religion</label>
+            <select id="prefReligion" name="prefReligion">
+              <option value="">Any</option>
+              <option value="hindu">Hindu</option>
+              <option value="muslim">Muslim</option>
+              <option value="christian">Christian</option>
+              <option value="sikh">Sikh</option>
+              <option value="jain">Jain</option>
+              <option value="buddhist">Buddhist</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="prefCaste">Preferred Caste/Community</label>
+            <input
+              type="text"
+              id="prefCaste"
+              name="prefCaste"
+              placeholder="Specific caste or 'Any'"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="prefEducation">Preferred Education</label>
+          <input
+            type="text"
+            id="prefEducation"
+            name="prefEducation"
+            placeholder="Desired education level"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="prefProfession">Preferred Profession</label>
+          <input
+            type="text"
+            id="prefProfession"
+            name="prefProfession"
+            placeholder="Desired profession"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="aboutYourself">About Yourself</label>
+          <textarea
+            id="aboutYourself"
+            name="aboutYourself"
+            rows="4"
+            placeholder="Describe your personality, interests, hobbies, etc."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="partnerExpectations">Expectations from Partner</label>
+          <textarea
+            id="partnerExpectations"
+            name="partnerExpectations"
+            rows="4"
+            placeholder="What you're looking for in a life partner"
+          ></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Submit Biodata</button>
+          <button type="reset" class="btn btn-secondary">Reset Form</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

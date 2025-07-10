@@ -146,8 +146,15 @@ textarea:focus {
 .col {
   flex: 1;
   min-width: 200px;
+  position: relative;
 }
 
+.icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: 5px;
+}
 .section-title {
   font-size: 1.3rem;
   color: var(--dark-color);
