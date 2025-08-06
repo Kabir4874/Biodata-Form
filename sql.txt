@@ -1,0 +1,51 @@
+-- Create users table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Create biodata table with all form fields
+CREATE TABLE biodata (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    profile_photo VARCHAR(255),
+    full_name VARCHAR(100) NOT NULL,
+    nickname VARCHAR(50),
+    date_of_birth DATE NOT NULL,
+    age INT,
+    height VARCHAR(20),
+    weight VARCHAR(20),
+    gender ENUM('male', 'female', 'other') NOT NULL DEFAULT 'male',
+    religion ENUM('hindu', 'muslim', 'christian', 'sikh', 'jain', 'buddhist', 'other') NOT NULL,
+    caste VARCHAR(50),
+    mother_tongue VARCHAR(50),
+    email VARCHAR(100),
+    phone VARCHAR(20) NOT NULL,
+    address TEXT,
+    education ENUM('high-school', 'diploma', 'graduate', 'post-graduate', 'doctorate', 'other'),
+    degree VARCHAR(100),
+    occupation VARCHAR(100),
+    income VARCHAR(50),
+    organization VARCHAR(100),
+    father_name VARCHAR(100),
+    father_occupation VARCHAR(100),
+    mother_name VARCHAR(100),
+    mother_occupation VARCHAR(100),
+    siblings VARCHAR(100),
+    family_type ENUM('joint', 'nuclear'),
+    family_values SET('traditional', 'moderate', 'liberal'),
+    pref_age VARCHAR(20),
+    pref_height VARCHAR(20),
+    pref_religion ENUM('hindu', 'muslim', 'christian', 'sikh', 'jain', 'buddhist'),
+    pref_caste VARCHAR(50),
+    pref_education VARCHAR(100),
+    pref_profession VARCHAR(100),
+    about_yourself TEXT,
+    partner_expectations TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+);
